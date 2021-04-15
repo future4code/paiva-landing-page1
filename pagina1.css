@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.links {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+}
+
+.links label {
+    padding: 10px 0;
+    flex-grow: 1;
+    cursor: pointer;
+    transition: all .4s;
+    text-align: center;
+    font-family: Arial;
+    font-size: 100%;
+    color: white;
+}
+
+.links label:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.scroll input {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 50px;
+}
+
+.bloco {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bloco img {
+    width: 40%;
+}
+
+#check {
+    display: none;
+}
+
+#icone {
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.barra {
+    background-color: #333;
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -300px;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.link {
+    background-color: #494950;
+    padding: 20px;
+    font-family: arial;
+    font-size: 12pt;
+    transition: all .2s linear;
+    color: #f4f4f9;
+    border-bottom: 2px solid #222;
+    opacity: 0;
+    margin-top: 200px;
+}
+
+.link:hover {
+    background-color: #050542;
+}
+
+#check:checked~.barra {
+    transform: translateX(300px);
+}
+
+#check:checked~.barra nav a .link {
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .2s;
+}
+
+#contatos {
+    background-color: #AFEEEE;
+}
+
+#quemsomos {
+    background-color: #87CEFA;
+}
+
+#trabalheconosco {
+    background-color: #ADD8E6;
+}
+
+#ondeestamos {
+    background-color: #1E90FF;
+}
+
+#rd_quemsomos:checked~.sections {
+    margin-top: -100vh;
+}
+
+.scroll {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: grey(255, 0, 0, 0.8);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.sections {
+    transition: all .4s;
+}
+
+#rd_quemsomos:checked~.sections {
+    margin-top: -100vh;
+}
+
+#rd_trabalhe:checked~.sections {
+    margin-top: -200vh;
+}
+
+#rd_onde:checked~.sections {
+    margin-top: -300vh;
+}
