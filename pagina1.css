@@ -230,6 +230,10 @@ footer img {
     width: 20px;
 }
 
+footer img:hover {
+    opacity: -1;
+}
+
 @media screen and (375x667) {
     .main,
     footer,
