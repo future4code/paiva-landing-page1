@@ -10,7 +10,7 @@
     display: flex;
 }
 
-.links label {
+.links a {
     padding: 10px 0;
     flex-grow: 1;
     cursor: pointer;
@@ -19,14 +19,11 @@
     font-family: Arial;
     font-size: 100%;
     color: black;
+    text-decoration: none;
 }
 
-.links label:hover {
+.links a:hover {
     background-color: rgba(255, 255, 255, .2);
-}
-
-.scroll input {
-    display: none;
 }
 
 ::-webkit-scrollbar {
@@ -155,13 +152,16 @@ nav a {
     margin-top: -300vh;
 }
 
-.main img {
-    height: 100vh;
-    width: 100vw;
+
+/*  SLIDE BY THERGE  */
+
+#main img {
+    height: 95vh;
+    width: 95vw;
 }
 
-.main {
-    margin: 200px auto;
+#main {
+    margin-top: 70px;
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -197,3 +197,6 @@ nav a {
 .foto:nth-child(4) {
     animation-delay: 15s;
 }
+
+
+/* FIM SLIDE */
