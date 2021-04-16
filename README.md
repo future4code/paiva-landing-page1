@@ -26,7 +26,7 @@ Site __responsivo__ criado utlizando apenas HTML e CSS puro!
 
 **Atom** :shoe:
 
-![Atom](/paiva-landing-page1/img/atom.jpg)
+![Atom](https://cdn.bike24.net/i/mb/94/ac/9b/288946-00-d-585807.jpg)
 
 
 
