@@ -20,13 +20,13 @@ Site __responsivo__ criado utlizando apenas HTML e CSS puro!
 
 **Allbirds**  :shoe:
 
-![Allbird](/home/therge/labenu-projects/paiva-landing-page1/img/allbird.jpg)
+![Allbird](/paiva-landing-page1/img/allbird.jpg)
 
 
 
 **Atom** :shoe:
 
-![Atom](/home/therge/labenu-projects/paiva-landing-page1/img/atom.jpg)
+![Atom](/paiva-landing-page1/img/atom.jpg)
 
 
 
