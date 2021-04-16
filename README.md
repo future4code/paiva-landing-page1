@@ -20,7 +20,7 @@ Site __responsivo__ criado utlizando apenas HTML e CSS puro!
 
 **Allbirds**  :shoe:
 
-![Allbird](/paiva-landing-page1/img/allbird.jpg)
+![Allbird](https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/allbirdsxjust-still-life-5-2019-1567608171.jpg?resize=480:*)
 
 
 
