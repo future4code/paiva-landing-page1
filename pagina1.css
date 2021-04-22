@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.links {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+}
+
+.links a {
+    padding: 10px 0;
+    flex-grow: 1;
+    cursor: pointer;
+    transition: all .4s;
+    text-align: center;
+    /* font-family: 'Bangers', cursive; */
+    font-family: 'Rock Salt', cursive;
+    font-size: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+.links a:hover {
+    background-color: rgba(255, 255, 255, .2);
+    color: cornflowerblue;
+}
+
+::-webkit-scrollbar {
+    width: 50px;
+}
+
+.bloco {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bloco img {
+    width: 40%;
+}
+
+#check {
+    display: none;
+}
+
+#icone {
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.barra {
+    background-color: #333;
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -300px;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.link {
+    background-color: #494950;
+    padding: 20px;
+    font-family: arial;
+    font-size: 12pt;
+    transition: all .2s linear;
+    color: #f4f4f9;
+    border-bottom: 2px solid #222;
+    opacity: 0;
+    margin-top: 200px;
+}
+
+.link:hover {
+    background-color: #050542;
+}
+
+#check:checked~.barra {
+    transform: translateX(300px);
+}
+
+#check:checked~.barra nav a .link {
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .2s;
+}
+
+#contatos {
+    background-color: #AFEEEE;
+}
+
+#quemsomos {
+    background-color: #87CEFA;
+}
+
+#trabalheconosco {
+    background-color: #ADD8E6;
+}
+
+#ondeestamos {
+    background-color: #1E90FF;
+}
+
+#rd_quemsomos:checked~.sections {
+    margin-top: -100vh;
+}
+
+.scroll {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: grey(255, 0, 0, 0.8);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.sections {
+    transition: all .4s;
+}
+
+#rd_quemsomos:checked~.sections {
+    margin-top: -100vh;
+}
+
+#rd_trabalhe:checked~.sections {
+    margin-top: -200vh;
+}
+
+#rd_onde:checked~.sections {
+    margin-top: -300vh;
+}
+
+
+/*  SLIDE BY THERGE  */
+
+#main img {
+    height: 90vh;
+    width: 100vw;
+}
+
+#main {
+    margin-top: 70px;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.foto {
+    position: absolute;
+    opacity: 0;
+    animation: animacao 20s infinite;
+}
+
+@keyframes animacao {
+    25% {
+        opacity: 1;
+        transform: scale(1.1, 1.1);
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.foto:nth-child(1) {}
+
+.foto:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.foto:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.foto:nth-child(4) {
+    animation-delay: 15s;
+}
+
+
+/* FIM SLIDE */
+
+footer {
+    background: darkslategrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+footer img {
+    padding: 0;
+    margin: 0;
+    height: 20px;
+    width: 20px;
+}
+
+footer img:hover {
+    opacity: -1;
+}
+
+@media screen and (375x667) {
+    .main,
+    footer,
+    header {
+        min-width: 375px;
+        min-height: 667px;
+    }
+    .links,
+    nav {
+        padding: 20px;
+        margin: 20px;
+    }
+    div {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+}
